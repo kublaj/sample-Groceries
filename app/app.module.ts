@@ -1,5 +1,5 @@
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { NgModule, NgModuleFactoryLoader } from "@angular/core";
+import { NgModule, NgModuleFactoryLoader, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { NativeScriptRouterModule, NSModuleFactoryLoader } from "nativescript-angular/router";
 
@@ -25,6 +25,7 @@ setStatusBarColors();
   declarations: [
       AppComponent,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [NO_ERRORS_SCHEMA]
 })
 export class AppModule { }
